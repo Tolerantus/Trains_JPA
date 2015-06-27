@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="Trains_JPA">
+	<class>com.entities.Passenger</class>
+		<class>com.entities.Station</class>
+		<class>com.entities.Direction</class>
+		<class>com.entities.Route</class>
+		<class>com.entities.Train</class>
+		<class>com.entities.Shedule</class>
+		<class>com.entities.Journey</class>
+		<class>com.entities.Seats</class>
+		<class>com.entities.User</class>
+		<class>com.entities.Ticket</class>
+		<class>com.entities.User_Ticket</class>
+		<properties>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sbb"/>
+         <property name="javax.persistence.jdbc.user" value="root"/>
+         <property name="javax.persistence.jdbc.password" value="115Rktnxfnsq"/>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+      </properties>
+	</persistence-unit>
+</persistence>
